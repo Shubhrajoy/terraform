@@ -21,7 +21,3 @@ variable "appserviceplantier" {
 variable "appserviceplansize" {
 	description = "Size for App service Plan"
 }
-
-variable "appsrvcplanid" {
-	description = "hold the App service Plan ID"
-}
