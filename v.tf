@@ -18,3 +18,4 @@ module "function_app" {
 	appsrvcplanid = module.app_service_plan.appsrvcplanid
 	strgconnstring = "${var.strgconnstring}"
 }
+
