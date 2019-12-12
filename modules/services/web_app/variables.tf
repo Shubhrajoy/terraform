@@ -11,5 +11,5 @@ variable "rg_name" {
 }
 
 variable "app_srvc_plan_id" {
-    description = " The ID of the App Service Plan within which to create this Web App."
+    description = " The ID of the App Service Plan within which to create this Function App."
 }

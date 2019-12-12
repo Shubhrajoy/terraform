@@ -1,4 +1,4 @@
-resource "azurerm_app_service" "example" {
+resource "azurerm_app_service" "webapp" {
 	name                = "${var.app_service_name}"
 	location            = "${var.app_service_location}"
 	resource_group_name = "${var.rg_name}"
