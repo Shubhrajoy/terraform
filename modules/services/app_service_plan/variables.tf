@@ -1,3 +1,14 @@
+variable "access_group" {
+  type = "string"
+  default = ""
+  description = "Group to be assigned the admin access to (if PG custom RBAC exists)"
+}
+
+variable "subscription_id" {
+  type = "string"
+  description = "ID of the subscription where the resource will be deployed"
+}
+
 variable "app_service_plan_name" {
 	type = "string"
 	description = "Name of the App Service Plan"
@@ -26,4 +37,15 @@ variable "app_service_plan_tier" {
 variable "app_service_plan_size" {
 	type = "string"
 	description = "Size for App service Plan"
+}
+
+variable "default_tags" {
+  type = map
+  description = "Default tags for the resource"
+}
+
+variable "additional_tags" {
+  type = map
+  default = {}
+  description = "Additional tags for the resource"
 }
